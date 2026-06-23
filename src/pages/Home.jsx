@@ -35,10 +35,10 @@ export default function Home() {
     <HomeContainer>
       <div>
         <HeaderSection filter={filter} setFilter={setFilter} />
-        {(filter === "리스트" && <ListSection posts={posts} />) ||
-          (filter === "보드" && <BoardSection posts={posts} />) ||
-          (filter === "갤러리" && <GallerySection posts={posts} />) ||
-          (filter === "피드" && <FeedSection posts={posts} />)}
+        {(filter === "리스트" && <ListSection posts={posts} />)}
+        {(filter === "보드" && <BoardSection posts={posts} />)}
+        {(filter === "갤러리" && <GallerySection posts={posts} />)}
+        {(filter === "피드" && <FeedSection posts={posts} />)}
       </div>
     </HomeContainer>
   );
